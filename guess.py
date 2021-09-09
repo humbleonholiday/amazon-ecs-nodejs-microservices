@@ -5,8 +5,6 @@ print("welcome to the guessing numbers game!")
 print("Guess the correct number from 0 to 100")
 print("**********************************************")
 
-print("Hello Harrison and Benjamin!")
-
 import random
 
 #if c else if q quit, else anything else repeat the question
