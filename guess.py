@@ -6,11 +6,20 @@ print("Guess the correct number from 0 to 100")
 print("**********************************************")
 
 import random
+from os import system, name
 
-#if c else if q quit, else anything else repeat the question
-play_game = input("Press (c) to continue or (q) to quit:")
+system('clear')
+# validate input need c or q, anything else repeat the question
 
-while play_game != "q": 
+while True:
+    play_game = input("Press (c) to continue or (q) to quit:")
+    if play_game not in ('c', 'q'):
+        print("Not an appropriate choice.")
+    else:
+        break
+
+while play_game != "q":
+    print("get to loop?")
     won = "no"
     #generate number
     print("Generating random number")
