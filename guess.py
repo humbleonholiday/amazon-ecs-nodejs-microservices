@@ -5,8 +5,6 @@ print("welcome to the guessing numbers game!")
 print("Guess the correct number from 0 to 100")
 print("**********************************************")
 
-print("Hello Harrison and Benjamin!")
-
 import random
 
 #if c else if q quit, else anything else repeat the question
@@ -31,7 +29,10 @@ while play_game != "q":
             play_game=input("Press (c) to continue or (q) to quit:")
             print(play_game)
         else:
-            print("unlucky, try again!")
+            if int(my_guess) < correct_number:
+                print("unlucky, try a higher number")
+            else:
+                print("unlucky, try a lower number")
 
 
 print("Quitting game, goodbye!")
