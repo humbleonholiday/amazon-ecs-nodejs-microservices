@@ -31,7 +31,10 @@ while play_game != "q":
             play_game=input("Press (c) to continue or (q) to quit:")
             print(play_game)
         else:
-            print("unlucky, try again!")
+            if int(my_guess) < correct_number:
+                print("unlucky, try a higher number")
+            else:
+                print("unlucky, try a lower number")
 
 
 print("Quitting game, goodbye!")
